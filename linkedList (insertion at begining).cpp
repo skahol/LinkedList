@@ -43,7 +43,8 @@ int main(){
 		printf("Enter the value :");
 		scanf("%d",&value);
 		head = insert(head, value);
-		print(head);
+	//	print(head);
 	}
+	print(head);
 	return 0;
 }
