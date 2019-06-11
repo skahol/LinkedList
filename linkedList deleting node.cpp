@@ -39,15 +39,19 @@ void print(){
 }
 int main(){
 	head = NULL;
-	insert(10);
-	insert(20);
-	insert(30);
-	insert(40);
 	insert(50);
+	insert(40);
+	insert(30);
+	insert(20);
+	insert(10);
 	print();
-	del(1);		// position
+	int del1;
+	printf("Enter node position for node deletion :");
+	scanf("%d",&del1);
+	del(del1);		// position
 	print();
-	del(3);
+	scanf("%d",&del1);
+	del(del1);
 	print();	// 40 30 10 resultant 
 	return 0;
 }
