@@ -53,10 +53,10 @@ int main()
 
 Node *compute(Node *head)
 {
-   Node* curr,*next;
    bool flag ;
    
    while(1){
+     Node* curr,*next;
      flag =false;
      curr = head;
     // for single node list condition
@@ -79,6 +79,7 @@ Node *compute(Node *head)
        next = next->next;
        if(curr->data < next->data){
            flag = true;
+           free(curr);
            prev->next = next;       // set previous link to next ,not current link.
        }
        else{
